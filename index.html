@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recep Şen | Fen Bilimleri Öğretmeni</title>
+  <meta name="description" content="Fen Bilimleri öğretmeni ve teknoloji tutkunu olarak Jetson, Pixhawk, YOLO ve gömülü sistemlerle otonom drone projeleri geliştiriyorum. Teknofest ve STEM odaklı çalışmalar yapıyor, görüntü işleme, RTK ve uzun menzilli iletişim konularında uzmanlaşıyorum. Öğrencilerle sahada inovatif çözümler üretiyorum." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Recep Şen</h1>
+      <nav class="space-x-4">
+        <a href="#projeler" class="hover:underline">Projeler</a>
+        <a href="#hakkimda" class="hover:underline">Hakkımda</a>
+        <a href="#iletisim" class="hover:underline">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-blue-600 text-white py-20 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-4xl font-extrabold mb-4">Drone & Yapay Zekâ ile İnovatif Çözümler</h2>
+      <p class="text-lg">Fen Bilimleri öğretmeni ve teknoloji tutkunu olarak Jetson, Pixhawk, YOLO ve gömülü sistemlerle otonom drone projeleri geliştiriyorum. Teknofest ve STEM odaklı çalışmalar yapıyor, görüntü işleme, RTK ve uzun menzilli iletişim konularında uzmanlaşıyorum. Öğrencilerle sahada inovatif çözümler üretiyorum.</p>
+    </div>
+  </section>
+
+  <section id="projeler" class="py-16 max-w-6xl mx-auto px-4">
+    <h3 class="text-2xl font-bold mb-8">Projeler</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="font-semibold mb-2">Otonom Drone Renk Takibi</h4>
+        <p class="text-sm text-gray-600">YOLO ile mavi/kırmızı tespiti, LOITER moduna geçiş, servo tetikleme ve hassas merkezleme.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="font-semibold mb-2">PyQt5 Yer İstasyonu</h4>
+        <p class="text-sm text-gray-600">VNC/UDP görüntü, telemetri göstergeleri ve mod değişimleri için tek panel.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="font-semibold mb-2">Sıcak Tel Kesme Makinesi</h4>
+        <p class="text-sm text-gray-600">Kanat profillerinden otomatik G-code üretimi, Marlin entegrasyonu.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="font-semibold mb-2">İnsana Güdümlü Gimbal Silahlı Drone</h4>
+        <p class="text-sm text-gray-600">Jetson tabanlı nesne tanıma sistemi ile insan hedefleme, gimbal kontrolü ve entegre silah mekanizması. Gerçek zamanlı görüntü işleme ile yüksek hassasiyetli hedef takibi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="hakkimda" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-4">Hakkımda</h3>
+      <p class="text-gray-700 leading-relaxed">Fen Bilimleri öğretmeni olarak, öğrencilerle sahada proje geliştirmekten keyif alıyorum. Jetson Nano/Orin ve Pixhawk ile otonom görevler, RTK hassas konumlama, görüntü işleme ve yer istasyonu arayüzleri kuruyorum. STEM odaklı atölyeler düzenliyor ve Teknofest projelerine mentorluk yapıyorum. Ayrıca insana güdümlü gimbal silahlı drone projesi gibi ileri seviye savunma teknolojileri üzerinde çalışıyorum.</p>
+    </div>
+  </section>
+
+  <section id="iletisim" class="py-16 max-w-6xl mx-auto px-4">
+    <h3 class="text-2xl font-bold mb-4">İletişim</h3>
+    <form onsubmit="event.preventDefault();window.location='mailto:recep.sen27@gmail.com?subject='+encodeURIComponent(this.konu.value)+'&body='+encodeURIComponent(this.mesaj.value)" class="grid gap-4 max-w-lg">
+      <input type="text" name="konu" placeholder="Konu" required class="p-3 border rounded">
+      <textarea name="mesaj" placeholder="Mesaj" rows="5" required class="p-3 border rounded"></textarea>
+      <button class="bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Gönder</button>
+    </form>
+  </section>
+
+  <footer class="bg-white border-t py-6 text-center text-sm text-gray-500">
+    © <span id="yil"></span> Recep Şen. Tüm hakları saklıdır.
+  </footer>
+
+  <script>
+    document.getElementById('yil').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
